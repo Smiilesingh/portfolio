@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: white;
+        }
+        header {
+            background: black;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .section {
+            margin: 80px 0;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            color: #0f0;
+            margin-bottom: 10px;
+        }
+        .contact {
+            background: #0f0;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            transition: background 0.3s;
+        }
+        .contact:hover {
+            background: #0a0;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .card-container {
+                justify-content: center;
+            }
+            .card {
+                width: 250px;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            .card {
+                width: 200px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I am Smile Singh</h1>
+        <p>A Web Developer & Designer | Python Enthusiast</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am a web developer passionate about building modern, functional websites and web applications. I am particularly interested in Python and backend technologies like Firebase and Cloudinary. I have also started exploring game development and other interactive projects.</p>
+        </section>
+        
+        <section class="section">
+            <h2>My Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Experience in building responsive websites using HTML, CSS, and JavaScript. Currently, I am also working on integrating Python for backend functionality in my projects.</p>
+                </div>
+                <div class="card">
+                    <h3>Backend Development</h3>
+                    <p>Proficient in Firebase and Cloudinary for managing data and storage in web applications. I’ve used Firestore for metadata storage in web apps and am learning more about backend frameworks in Python.</p>
+                </div>
+                <div class="card">
+                    <h3>Game Development</h3>
+                    <p>Currently working on a car racing project from scratch, focusing on smooth gameplay mechanics and performance. I also explore game engines like Godot for creating interactive experiences.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>My Portfolio</h2>
+            <p>Some of my recent works</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Exam Paper Web App</h3>
+                    <p>A web app for storing and retrieving last year's exam papers categorized by stream and year.</p>
+                </div>
+                <div class="card">
+                    <h3>Chat Application</h3>
+                    <p>A simple chat app built with Python and integrated with OpenAI's API to offer an enhanced user experience.</p>
+                </div>
+                <div class="card">
+                    <h3>Chatbot</h3>
+                    <p>A chatbot created using HTML, CSS, JavaScript, and Python, integrated with APIs for dynamic interaction.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Contact Me</h2>
+            <a href="mailto:your.email@example.com" class="contact">Get in Touch</a>
+        </section>
+    </div>
+</body>
+</html>
